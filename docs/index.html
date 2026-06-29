@@ -1,0 +1,216 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Robotics Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <main id="top">
+      <section class="hero">
+        <div class="hero-copy">
+          <h1>노경민</h1>
+          <p>KAIST 기계공학과 24학번</p>
+          <p>gyungminnoh@kaist.ac.kr</p>
+          <div class="hero-meta" aria-label="기술 키워드">
+            <span>기구 설계</span>
+            <span>PCB 제작</span>
+            <span>펌웨어 개발</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="paired-projects" id="bb8">
+        <article class="robot-card bb8-card">
+          <h2>BB8 로봇</h2>
+          <ul class="body-list">
+            <li>옴니 휠, 베벨 기어, 서스펜션 자체 제작</li>
+            <li>ESP32 WebSocket 기반 펌웨어로 모바일 조이스틱 UI를 통한 실시간 로봇 제어 구현</li>
+          </ul>
+          <div class="bb8-media">
+            <figure class="media-tile">
+              <img src="assets/media/image1.png" alt="BB8 로봇 기구 이미지">
+            </figure>
+            <video class="media-tile video" controls preload="metadata" src="assets/media/media1.mp4"></video>
+          </div>
+        </article>
+
+        <article class="robot-card humanoid-card" id="humanoid">
+          <h2>다이나믹셀 휴머노이드</h2>
+          <div class="humanoid-spacer" aria-hidden="true"></div>
+          <div class="humanoid-layout">
+            <div class="humanoid-stack">
+              <figure class="media-tile">
+                <img src="assets/media/image3.png" alt="다이나믹셀 휴머노이드 이미지 1">
+              </figure>
+              <video class="media-tile video" controls muted data-force-muted preload="metadata" src="assets/media/media2.mp4"></video>
+            </div>
+            <figure class="media-tile wide-photo rotated-photo">
+              <img src="assets/media/image4-rotated.png" alt="다이나믹셀 휴머노이드 이미지 2">
+            </figure>
+          </div>
+        </article>
+      </section>
+
+      <section class="plate-leg-pair" id="ballplate">
+        <article class="robot-card ballplate-card">
+          <h2>Ball Plate System</h2>
+          <ul class="body-list">
+            <li>OpenCV 기반 비전 처리로 공의 실시간 위치 추정</li>
+          </ul>
+          <div class="ballplate-media">
+            <video class="media-tile video ballplate-top" controls preload="metadata" src="assets/media/media4.mp4"></video>
+            <div class="ballplate-bottom">
+              <figure class="media-tile ballplate-vision">
+                <img src="assets/media/image8.png" alt="Ball Plate System 비전 처리 이미지">
+              </figure>
+              <video class="media-tile video ballplate-track" controls preload="metadata" src="assets/media/media3.mp4"></video>
+            </div>
+          </div>
+        </article>
+
+        <article class="robot-card twoleg-card" id="two-legged">
+          <h2>Servo-Driven<br>Two-Legged Robot</h2>
+          <ul class="body-list">
+            <li>4-Bar 메커니즘을 활용해서 관성모멘트를 최소화</li>
+            <li>ESP32 WebSocket 기반 펌웨어로 실시간 로봇 제어 구현</li>
+          </ul>
+          <div class="twoleg-media">
+            <div class="twoleg-photos">
+              <figure class="media-tile">
+                <img src="assets/media/image11.png" alt="Servo-Driven Two-Legged Robot 정면 CAD 이미지">
+              </figure>
+              <figure class="media-tile">
+                <img src="assets/media/image9.png" alt="Servo-Driven Two-Legged Robot 사시도 CAD 이미지">
+              </figure>
+            </div>
+            <video class="media-tile video twoleg-video" controls preload="metadata" src="assets/media/media5.mp4"></video>
+          </div>
+        </article>
+      </section>
+
+      <section class="project" id="legged-servo">
+        <div class="project-text">
+          <h2>Servo-Driven Quadruped Robot</h2>
+          <ul class="body-list">
+            <li>알루미늄 파이프와 PLA 출력물만으로 기구부를 설계하여 하드웨어 제작 비용 최소화</li>
+            <li>16채널 PWM 드라이버 IC, IMU 모듈, ESP32 모듈을 연결하는 전용 PCB 보드 제작</li>
+            <li>Host-ESP32-PCA9685-IMU 간 WebSocket/Serial 기반 실시간 제어·피드백 구조 개발</li>
+          </ul>
+        </div>
+        <div class="quadruped-gallery">
+          <div class="quad-row quad-mechanical">
+            <figure class="media-tile">
+              <img src="assets/media/image14-ppt.png" alt="서보 4족 로봇 기구 설계 이미지">
+            </figure>
+            <figure class="media-tile">
+              <img src="assets/media/image15.png" alt="서보 4족 로봇 하드웨어 제작 이미지">
+            </figure>
+          </div>
+          <div class="quad-row quad-body">
+            <figure class="media-tile">
+              <img src="assets/media/image16.png" alt="서보 4족 로봇 부품 이미지">
+            </figure>
+            <figure class="media-tile">
+              <img src="assets/media/image17-ppt.png" alt="서보 4족 로봇 외형 이미지">
+            </figure>
+          </div>
+          <div class="quad-row quad-pcb">
+            <figure class="media-tile">
+              <img src="assets/media/image18.png" alt="서보 4족 로봇 PCB 설계 이미지">
+            </figure>
+            <figure class="media-tile">
+              <img src="assets/media/image19-ppt.png" alt="서보 4족 로봇 PCB 제작 이미지">
+            </figure>
+          </div>
+          <figure class="media-tile quad-control">
+            <img src="assets/media/image20.png" alt="서보 4족 로봇 제어 구조 이미지">
+          </figure>
+        </div>
+      </section>
+
+      <section class="project dark" id="bldc">
+        <div class="project-text">
+          <h2>커스텀 BLDC<br>모터드라이버</h2>
+          <ul class="body-list">
+            <li>DRV8302 기반 커스텀 모터드라이버 회로 및 펌웨어 개발</li>
+            <li>XT30(2+2) 기반 40V DC 및 CAN 통합 인터페이스</li>
+            <li>외부 FRAM IC를 통해 액추에이터별 설정값과 FOC/출력축 보정값을 전원 차단 후에도 유지하고 재부팅 시 자동 복원되도록 설계</li>
+            <li>TMAG5170 3축 자기장 센서와 LUT 기반 각도 복원 알고리즘을 이용해 감속기 이후 출력축의 절대각을 추정하는 출력축 엔코더 기능 구현</li>
+            <li>URC 로버의 드라이빙 인휠 모터, 스티어링 모터, 로봇팔 그리퍼 모터 제어에 적용</li>
+          </ul>
+        </div>
+        <div class="bldc-gallery">
+          <div class="bldc-row bldc-pair">
+            <figure class="media-tile">
+              <img src="assets/media/image22.png" alt="커스텀 BLDC 모터드라이버 보드 이미지">
+            </figure>
+            <figure class="media-tile diagram">
+              <img src="assets/media/image21.svg" alt="커스텀 BLDC 모터드라이버 회로 다이어그램">
+            </figure>
+          </div>
+          <figure class="media-tile bldc-single">
+            <img src="assets/media/image23.png" alt="커스텀 BLDC 모터드라이버 추가 이미지">
+          </figure>
+          <figure class="media-tile bldc-single">
+            <img src="assets/media/그림1.png" alt="커스텀 BLDC 모터드라이버 적용 로버 이미지">
+          </figure>
+        </div>
+      </section>
+
+      <section class="project split" id="gripper">
+        <div class="project-text">
+          <h2>2026 URC MR2 그리퍼</h2>
+          <ul class="body-list">
+            <li>웜 기어를 활용하여 최대 5kg을 들 수 있도록 제작</li>
+          </ul>
+        </div>
+        <div class="gripper-layout">
+          <figure class="media-tile gripper-wide">
+            <img src="assets/media/image26.png" alt="그리퍼 CAD 이미지">
+          </figure>
+          <figure class="media-tile gripper-tall">
+            <img src="assets/media/image25.png" alt="그리퍼 제작 이미지">
+          </figure>
+        </div>
+      </section>
+
+      <section class="project" id="qdd">
+        <div class="project-text">
+          <h2>QDD<br>사족보행로봇</h2>
+          <ul class="body-list">
+            <li>다리 기구부 설계/제작 완료</li>
+            <li>SteadyWin WGG6010-8(GIM6010-8)+커스텀 BLDC 모터드라이버</li>
+          </ul>
+        </div>
+        <div class="qdd-gallery">
+          <div class="qdd-row qdd-row-top">
+            <figure class="media-tile">
+              <img src="assets/media/image27.png" alt="QDD 사족보행로봇 이미지 1">
+            </figure>
+            <figure class="media-tile">
+              <img src="assets/media/image28.png" alt="QDD 사족보행로봇 이미지 2">
+            </figure>
+            <figure class="media-tile">
+              <img src="assets/media/image29.png" alt="QDD 사족보행로봇 이미지 3">
+            </figure>
+          </div>
+          <div class="qdd-row qdd-row-bottom">
+            <figure class="media-tile">
+              <img src="assets/media/image30.png" alt="QDD 사족보행로봇 이미지 4">
+            </figure>
+            <figure class="media-tile">
+              <img src="assets/media/image31.png" alt="QDD 사족보행로봇 이미지 5">
+            </figure>
+            <figure class="media-tile">
+              <img src="assets/media/image32.png" alt="QDD 사족보행로봇 이미지 6">
+            </figure>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
